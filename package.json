@@ -1,0 +1,26 @@
+{
+  "name": "201008_landing_acquapura1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass scss/main.scss css/main.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@glidejs/glide": "^3.4.1",
+    "animate.css": "^4.1.1",
+    "aos": "^3.0.0-beta.6",
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "node-sass": "^4.14.1",
+    "owl.carousel": "^2.3.4"
+  },
+  "devDependencies": {
+    "postcss": "^8.1.1",
+    "postcss-cli": "^8.0.0"
+  }
+}

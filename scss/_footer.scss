@@ -1,0 +1,28 @@
+footer a {
+  color: #000;
+}
+
+footer a:hover {
+  color:#000;
+}
+
+#back-to-top {
+  opacity: 0;
+  position: fixed;
+  bottom: 5px;
+  right: 50px;
+  z-index: 999;
+  transition: opacity 0.2s ease-out;
+  font-size: 2em;
+  color: #00607A;
+}
+
+#back-to-top.appear {
+  opacity: 1;
+}
+
+@media (max-width: 1199px) {
+  #back-to-top {
+      display: none;
+  }
+}
