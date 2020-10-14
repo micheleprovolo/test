@@ -3,6 +3,7 @@
     src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
 }
 
+// reset
 * {
     margin: 0;
     padding: 0;
@@ -33,7 +34,6 @@ a {
     text-transform: uppercase;
     color:#023954;
     font-size: 40px;
-    // margin-top: 50px;
 }
 
 h1 {
@@ -45,14 +45,12 @@ h1 {
     text-transform: uppercase;
     color: #023954;
     font-size: 30px;
-    // margin-top: 50px;
 }
 
 @mixin h2-style {
     text-align: center;
     color:#023954;
     font-size: 30px;
-    // margin-top: 50px;
 }
 
 h2 {
@@ -64,7 +62,6 @@ h2 {
     text-transform: uppercase;
     color: #023954;
     font-size: 20px;
-    // margin-top: 50px;
 }
 
 @media screen and (max-width: 576px) {
