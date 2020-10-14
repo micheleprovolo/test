@@ -1,6 +1,8 @@
-$( document ).ready(function() {
+$(document).ready(function() {
 
-    AOS.init();
+    $('.navbar-collapse a').click(function(){
+        $(".navbar-collapse").collapse('hide');
+    });
 
     getCopyrightFullYear();
     scrollDownOnClick();
@@ -30,7 +32,7 @@ $( document ).ready(function() {
                 0:{
                     items:1
                 },
-                900:{
+                575:{
                     items:3
                 }
             }
@@ -41,20 +43,21 @@ $( document ).ready(function() {
     function scrollDownOnClick() {
         $(".arrow").click(function() {
             $('html, body').animate({
+                //posiziona la pag all'inizio (top) della sez "come funziona"
                 scrollTop: $("#come-funziona").offset().top
-            }, 500);
+            }, 800);
         });
     }
 
 
     //bottone back to the top
     if ($('#back-to-top').length) {
-        var scrollTrigger = 700, //px
+        var scrollTrigger = 700, //dopo quanti px si attiva la freccia
 
         backToTop = function() {
             //ritorna la posizione della scrollbar e la salva in var
             var scrollTop = $(window).scrollTop();
-            //se la pos della scrollbar è maggiore del valore che ho impostato come trigger (in questo caso 50)
+            //se la pos della scrollbar è maggiore del valore che ho impostato come trigger (in questo caso 700)
             if (scrollTop > scrollTrigger) {
             $('#back-to-top').addClass('appear');
             } else {
@@ -66,12 +69,12 @@ $( document ).ready(function() {
         $(window).on('scroll', function() {
             backToTop();
         });
-        //al clic sul bottone riporta a 0 la scrollbar con velocità di 700 millisecondi
+        //al clic sul bottone riporta a 0 la scrollbar con velocità di 800 millisecondi
         $('#back-to-top').on('click', function(e) {
             e.preventDefault();
             $('html,body').animate({
             scrollTop: 0
-            }, 100);
+            }, 800);
         });
     }
 

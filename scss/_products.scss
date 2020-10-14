@@ -37,17 +37,22 @@
     text-align: center;
 }
 
-.m-hide {
+.card-title {
+    font-size: 20px;
+}
+
+.mobile-show-carousel {
     display: none;
 }
 
-@media (max-width: 1199px) {
-    .m-hide {
+@media screen and (max-width: 768px) {
+    .mobile-show-carousel {
         display: block;
     }
-    
-    .m-no-show{
-        display: none;
+    .desktop-show {
+        display: none !important;
     }
+
 }
+
 

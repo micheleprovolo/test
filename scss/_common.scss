@@ -1,7 +1,13 @@
+@font-face {
+    font-family: mainFont;
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: mainFont;
 }
 
 a {
@@ -15,3 +21,87 @@ a {
 .padding-section {
     padding-top: 100px;
 }
+
+.animated-btn {
+    animation: shakeX; 
+    animation-duration: 20s; 
+}
+
+@mixin h1-style {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:#023954;
+    font-size: 40px;
+    // margin-top: 50px;
+}
+
+h1 {
+    @include h1-style;
+}
+
+@mixin h1-m-style {
+    text-align: center;
+    text-transform: uppercase;
+    color: #023954;
+    font-size: 30px;
+    // margin-top: 50px;
+}
+
+@mixin h2-style {
+    text-align: center;
+    color:#023954;
+    font-size: 30px;
+    // margin-top: 50px;
+}
+
+h2 {
+    @include h2-style;
+}
+
+@mixin h2-m-style {
+    text-align: center;
+    text-transform: uppercase;
+    color: #023954;
+    font-size: 20px;
+    // margin-top: 50px;
+}
+
+@media screen and (max-width: 576px) {
+    h1 {
+        @include h1-m-style;
+    }
+    h2 {
+        @include h2-m-style;
+    }
+}
+
+.main-title {
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 130px;
+}
+
+.main-subtitle {
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 576px) {
+    .main-title {
+        color: #fff;
+        font-size: 35px;
+        font-weight: bold;
+        margin-top: 110px;
+    }
+    
+    .main-subtitle {
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
